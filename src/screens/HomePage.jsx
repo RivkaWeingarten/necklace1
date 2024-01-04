@@ -22,6 +22,9 @@ const HomePage = () => {
 
   const updateCoordinates = () => {
     const image = document.getElementById("responsive-image");
+    
+    const originalWidth = 1500;
+    const originalHeight = 1500;
     const imageWidth = image.width;
     const imageHeight = image.height;
     console.log(`updated Coordinates`);
@@ -69,14 +72,12 @@ const HomePage = () => {
 
   useEffect(() => {
     // Initial dimensions of the image
-    const originalWidth = 1500;
-    const originalHeight = 1500;
+  
     const handleNavigation = () => {
       updateCoordinates();
     };
 
     window.addEventListener("resize", updateCoordinates);
-
     window.addEventListener("popstate", handleNavigation);
     window.addEventListener("pageshow", handleNavigation);
 
