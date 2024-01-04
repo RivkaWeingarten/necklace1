@@ -7,7 +7,72 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.popup {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+.cert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* object-fit: contain; */
+  /* margin-top: 20px; */
+}
+.image-container {
+  position: relative;
+  max-width: 1150px;
+  height: auto;
+  overflow: none;
+  /* width:50vw; */
+  align-items: center;
+  justify-content: center;
+}
+/* Centered text */
+.centered {
+position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+text-align: center;
+}
+.necklaceImage {
+  width: 100%;
+
+}
+/* }
+.pdf{
+width:100vw;
+background-color: aqua;
+} */
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
