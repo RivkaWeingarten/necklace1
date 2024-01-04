@@ -114,7 +114,7 @@ export default function EachDiamond() {
         </div> */}
         <div className="cert-container" ref={setContainerRef}>
           <Document
-            file={`/certs/${id}.pdf`}
+            file={`http://www.hasenfeld-stein.com/images/certificates/${id}.pdf`}
             onLoadSuccess={onDocumentLoadSuccess}
             options={options}
           >
