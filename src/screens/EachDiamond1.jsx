@@ -29,16 +29,17 @@ return (
 
     <h1>Diamond Details</h1>
 
-    <Link to={`http://www.hasenfeld-stein.com/images/certificates/${id}.pdf`}>
+   
       <iframe
         title="PDF Viewer"
         width="100%"
         height="700"
-        src={`http://www.hasenfeld-stein.com/images/certificates/${id}.pdf`}
+        // src={`http://www.hasenfeld-stein.com/images/certificates/${id}.pdf`}
+         src={`/certs/${id}.pdf`}
    
         allowFullScreen
       ></iframe>
-    </Link>
+ 
   </>
 );
 }
