@@ -83,11 +83,11 @@ export default function EachDiamond() {
 
 
  const navigate=useNavigate()
-  function onDocumentLoadSuccess({
-    numPages: nextNumPages,
-  }: PDFDocumentProxy): void {
-    setNumPages(nextNumPages);
-  }
+  // function onDocumentLoadSuccess({
+  //   numPages: nextNumPages,
+  // }: PDFDocumentProxy): void {
+  //   setNumPages(nextNumPages);
+  // }
 
   function handleClick (){
   navigate(-1)
@@ -117,7 +117,7 @@ export default function EachDiamond() {
           <Document
             // file={`http://www.hasenfeld-stein.com/images/certificates/${id}.pdf`}
              file={`/certs/${id}.pdf`}
-            onLoadSuccess={onDocumentLoadSuccess}
+            // onLoadSuccess={onDocumentLoadSuccess}
             options={options}
           >
 
