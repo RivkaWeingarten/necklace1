@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import bootstrap from 'react-bootstrap'
 import HomePage from './screens/HomePage';
-import EachDiamond from './screens/EachDiamond';
+import EachDiamond1 from './screens/EachDiamond1';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
    
       <Routes>
         <Route path='/' element ={<HomePage />} />
-        <Route path='/diamond/:id' element ={<EachDiamond />} />
+        <Route path='/diamond/:id' element ={<EachDiamond1 />} />
       </Routes>
       </BrowserRouter>
 
