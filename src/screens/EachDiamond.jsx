@@ -106,20 +106,24 @@ export default function EachDiamond() {
         </Button>
 
       <h1>Diamond Details</h1>
-
+   
       <div className="cert-conta">
         {/* <div className="Example__container__load">
           <label htmlFor="file">Load from file:</label>{' '}
           <input onChange={onFileChange} type="file" />
         </div> */}
         <div className="cert-container" ref={setContainerRef}>
+       
           <Document
             // file={`http://www.hasenfeld-stein.com/images/certificates/${id}.pdf`}
-             file={`/cert/${id}.pdf`}
+             file={`/certs/${id}.pdf`}
             onLoadSuccess={onDocumentLoadSuccess}
             options={options}
           >
+
+
             {Array.from(new Array(numPages), (el, index) => (
+               <Link to ={`http://www.hasenfeld-stein.com/images/certificates/${id}.pdf`}>
               <Page
                 key={`page_${index + 1}`}
                 pageNumber={index + 1}
@@ -127,8 +131,10 @@ export default function EachDiamond() {
                   containerWidth ? Math.min(containerWidth, maxWidth) : maxWidth
                 }
               />
+              </Link>
             ))}
           </Document>
+         
         </div>
       </div>
     </div>
